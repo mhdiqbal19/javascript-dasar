@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Statment</title>
+</head>
+<body>
+    <script>
+
+        const person = {
+            firstName: "Muhammad",
+            middleName: "Iqbal",
+            lastName: "Ganteng"
+        }
+        with(person){
+            document.writeln(firstName);
+            document.writeln(middleName);
+            document.writeln(lastName);
+        }
+
+    </script>
+    
+</body>
+</html>

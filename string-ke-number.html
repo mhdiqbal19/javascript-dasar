@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String ke Number</title>
+</head>
+<body>
+
+    <script>
+
+        const value1 = parseInt("1");
+        const value2 = 1;
+        const sum = value1 + value2;
+        document.writeln(`<p>${sum}</p>`)
+
+        document.writeln(`<p>${parseInt("1.")}</p>`)
+        document.writeln(`<p>${parseFloat("1.1")}</p>`)
+        document.writeln(`<p>${Number("1.1")}</p>`)
+
+        const a = 1;
+        const b = 1;
+        const total = a.toString() + b.toString();
+        document.writeln(`<p>${total}</p>`)
+        document.writeln(`<br>`)
+
+
+        document.writeln(`<p>${parseInt("1Salah")}</p>`)
+        document.writeln(`<p>${parseFloat("1Salah")}</p>`)
+
+        //number() tidak akan metolelir kesalahan pada data
+        document.writeln(`<p>${Number("1.1ups")}</p>`)
+        document.writeln(`<p>${Number("1x")}</p>`)
+        document.writeln(`<p>${Number("bukan number")}</p>`)
+        document.writeln(`<br>`)
+
+
+        const first = Number("salah");
+        const totalNumber = first + 100;
+        document.writeln(`<p>${totalNumber}</p>`)
+        document.writeln(`<br>`)
+
+        // is NaN
+        document.writeln(`<p>${isNaN(100)}</p>`)
+
+
+
+    </script>
+    
+</body>
+</html>
